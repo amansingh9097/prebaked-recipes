@@ -1,0 +1,12 @@
+Hi ${PERSON_NAME},
+
+Since our last meeting, I've been working on the following tasks:
+- corrected the web-scrapping script for capturing the full names and amount adjacent to the right names.
+- Getting my self acquainted with Azure Data Factory architecture.
+- refreshing through the basics of R language.
+
+Regards,
+Aman Singh
+
+
+This mail has been sent via Python.
