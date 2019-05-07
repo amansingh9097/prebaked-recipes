@@ -1,2 +1,0 @@
-john john_doe@dummy.com
-foo foo.bar@foobar.com
