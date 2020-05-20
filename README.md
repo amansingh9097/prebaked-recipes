@@ -13,4 +13,4 @@ All contributions are welcomed. You can fork the repo and add your own scripts (
 
 Cheers! :beers:
 
-Aman Singh :sunglasses:<br>
+[Aman Singh](https://aman-singh.com/) :sunglasses:<br>
