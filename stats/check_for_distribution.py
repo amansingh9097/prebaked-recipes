@@ -8,10 +8,10 @@ import numpy as np
 import scipy
 from sklearn.preprocessing import StandardScaler
 import scipy.stats
-import warnings
-warnings.filterwarnings('ignore')
+# import warnings
+# warnings.filterwarnings('ignore')
 import matplotlib.pyplot as plt
-%matplotlib inline
+
 
 # change input file here
 data = pd.read_csv('input_dataset.csv') 
@@ -23,7 +23,8 @@ plt.show()
 # trying different distributions and checking for their p-values
 def get_distribution(data):
     size = len(data)
-    # add distributions here: https://docs.scipy.org/doc/scipy/reference/stats.html
+    
+    # can add more distributions from here: https://docs.scipy.org/doc/scipy/reference/stats.html
     dist_names = ['norm', 'beta', 'lognorm', 'expon', 'pearson3', 'uniform', 'weibull_min', 'weibull_max']
     
     # reshaping for scaling & scaling for KS test
