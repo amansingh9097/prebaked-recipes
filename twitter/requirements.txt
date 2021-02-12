@@ -1,0 +1,4 @@
+tweepy >= 3.10.0
+pandas >= 1.0.5
+tqdm >= 4.47.0
+configobj >= 5.0.6
