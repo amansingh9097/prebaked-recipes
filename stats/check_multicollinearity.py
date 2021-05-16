@@ -1,16 +1,20 @@
 import pandas as pd
 import numpy as np
+import statsmodels.api as sm
 
 # Function to calculate VIF: Variable Inflation Factors
 """
-VIF determines the strength of the correlation between the independent variables. It is predicted by taking a variable and regressing it against every other variable. 
-In other words, VIF score of an independent variable represents how well the variable is explained by other independent variables.
+VIF determines the strength of the correlation between the independent variables. 
+It is predicted by taking a variable and regressing it against every other variable. 
+In other words, VIF score of an independent variable represents how well the variable 
+is explained by other independent variables.
+
+VIF=1, Very Less Multicollinearity
+VIF<5, Moderate Multicollinearity
+VIF>5, Extreme Multicollinearity (something to avoid)
 """
+
 def calculate_vif(data):
-    """
-    Values of VIF >= 10 --->> serious multicollinearity, 
-    Values of VIF <= 4 ---->> no multicollinearity
-    """
     vif_df = pd.DataFrame(columns = ['Var', 'Vif'])
     x_var_names = data.columns
     for i in range(0, x_var_names.shape[0]):
