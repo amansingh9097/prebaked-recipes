@@ -1,0 +1,16 @@
+PyQRCode
+pypng
+pandas
+numpy
+urllib3
+requests-futures
+requests-oauthlib
+requests-toolbelt
+bs4
+statsmodels
+scikit-learn
+scipy
+tqdm
+tweepy
+selenium
+configobj
