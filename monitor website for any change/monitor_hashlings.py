@@ -10,7 +10,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleW
 response = requests.get(url, headers=headers)
 
 # create the initial hash
-currentHash = hashlib.sha224(response).hexdigest()
+currentHash = hashlib.sha224(response.text.encode('utf-8')).hexdigest()
 print("running")
 time.sleep(10)
 
@@ -20,7 +20,7 @@ while True:
         response = urlopen(url).read()
           
         # create a hash
-        currentHash = hashlib.sha224(response).hexdigest()
+        currentHash = hashlib.sha224(response.text.encode('utf-8')).hexdigest()
           
         # time delay
         time.sleep(30)
@@ -29,7 +29,7 @@ while True:
         response = urlopen(url).read()
           
         # create a new hash
-        newHash = hashlib.sha224(response).hexdigest()
+        newHash = hashlib.sha224(response.text.encode('utf-8')).hexdigest()
   
         # if new hash is same as the previous hash
         if newHash == currentHash:
@@ -44,7 +44,7 @@ while True:
             response = urlopen(url).read()
   
             # create a hash
-            currentHash = hashlib.sha224(response).hexdigest()
+            currentHash = hashlib.sha224(response.text.encode('utf-8')).hexdigest()
   
             # wait for 30 seconds
             time.sleep(30)
