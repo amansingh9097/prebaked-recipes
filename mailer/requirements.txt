@@ -1,2 +1,2 @@
-configobj==5.0.6
+configobj==5.0.9
 win10toast==0.9
